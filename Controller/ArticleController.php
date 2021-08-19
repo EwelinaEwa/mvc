@@ -37,10 +37,13 @@ class ArticleController
     public function index()
     {
         // Load all required data
-        $articles = $this->getArticles();
+        if ($articles = $this->getArticles()){
+            require 'View/articles/index.php';
+        }
 
         // Load the view
-        require 'View/articles/index.php';
+
+
     }
 
     // Note: this function can also be used in a repository - the choice is yours

@@ -35,6 +35,9 @@ switch ($page) {
         // $articleController->index();
         (new ArticleController($databaseManager))->index();
         break;
+    case 'show':
+        (new ArticleController($databaseManager))->show();
+        break;
     case 'home':
     default:
         (new HomepageController())->index();

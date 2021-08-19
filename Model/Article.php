@@ -21,8 +21,6 @@ declare(strict_types=1);
             // TODO: return the date in the required format
            $newDate= $this->publishDate;
            $changeDate = date("d-m-Y", strtotime($newDate));
-//           var_dump($newDate);
-//           var_dump($changeDate);
            return $changeDate;
 
         }
