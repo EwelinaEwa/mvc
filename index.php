@@ -24,6 +24,7 @@ $articleController = new ArticleController($databaseManager);
 $articleController->getArticles();
 
 
+
 $page = $_GET['page'] ?? null;
 
 // Load the controller
