@@ -19,5 +19,11 @@ declare(strict_types=1);
         public function formatPublishDate($format = 'DD-MM-YYYY')
         {
             // TODO: return the date in the required format
+           $newDate= $this->publishDate;
+           $changeDate = date("d-m-Y", strtotime($newDate));
+//           var_dump($newDate);
+//           var_dump($changeDate);
+           return $changeDate;
+
         }
     }

@@ -7,7 +7,7 @@
 
     <ul>
         <?php foreach ($articles as $article) : ?>
-            <li><a href=""><?= $article->title ?> <?= $article->formatPublishDate() ?></a></li>
+            <li><a href="show.php"><?= $article->title ?> - <?= $article->formatPublishDate('DD-MM-YYYY') ?></a></li>
         <?php endforeach; ?>
     </ul>
 </section>

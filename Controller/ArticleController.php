@@ -48,6 +48,7 @@ class ArticleController
     {
         // TODO: prepare the database connection
         // Note: you might want to use a re-usable databaseManager class - the choice is yours
+        // obtain the passed params from array in the config file
         // TODO: fetch all articles as $rawArticles (as a simple array)
         $sql = "SELECT * FROM articles";
         $result = $this->databaseManager->connection->query($sql)->fetchAll();
@@ -67,5 +68,6 @@ class ArticleController
     public function show()
     {
         // TODO: this can be used for a detail page
+
     }
 }
