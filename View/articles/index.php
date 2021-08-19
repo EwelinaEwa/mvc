@@ -7,7 +7,7 @@
 
     <ul>
         <?php foreach ($articles as $article) : ?>
-            <li><a href="index.php?page=show&title=".<?=$article->title?>> <?= $article->title ?> - <?= $article->formatPublishDate('DD-MM-YYYY') ?></a></li>
+            <li><a href="<?= 'index.php?page=show&title='. $article->title?>"> <?= $article->title ?> - <?= $article->formatPublishDate('DD-MM-YYYY') ?> </a></li>
         <?php endforeach; ?>
     </ul>
 </section>
