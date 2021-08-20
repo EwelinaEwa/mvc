@@ -12,7 +12,6 @@
 //    var_dump($selectedTitle);
     ?>
 
-    <h1><?= $selectedTitle; ?></h1>
 
     <?php foreach ($articles as $article) : ?>
 <!--        --><?//= var_dump($article->title); ?>
