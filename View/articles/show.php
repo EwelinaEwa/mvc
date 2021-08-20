@@ -8,19 +8,9 @@
 <section>
     <p><a href="index.php">To home</a></p>
 
-    <?php $selectedTitle=$_GET['title'];
-//    var_dump($selectedTitle);
-    ?>
-
-
-    <?php foreach ($articles as $article) : ?>
-<!--        --><?//= var_dump($article->title); ?>
-        <?php if ($selectedTitle== $article->title){ ?>
-            <h1><?= $selectedTitle; ?></h1>
-            <p><?= $article->description ?></p>
-        <?php  } ?>
-    <?php endforeach; ?>
-
+    <h1><?php echo $selectedTitle; ?></h1>
+    <p><?php echo $articleDescription ?></p>
+    
 
 </section>
 

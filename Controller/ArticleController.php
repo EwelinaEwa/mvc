@@ -72,9 +72,14 @@ class ArticleController
     {
         // TODO: this can be used for a detail page
         $articles = $this->getArticles();
+        $selectedTitle=$_GET['title'];
+
+        foreach ($articles as $article)
+        if ($selectedTitle== $article->title){
+            $articleDescription = $article->description;
+     } 
+
         require 'View/articles/show.php';
-
-
 
     }
 }
