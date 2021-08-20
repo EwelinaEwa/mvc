@@ -15,8 +15,9 @@
     <h1><?= $selectedTitle; ?></h1>
 
     <?php foreach ($articles as $article) : ?>
-<!--        --><?//= var_dump($articles); ?>
-        <?php if ($selectedTitle == $article->title){ ?>
+<!--        --><?//= var_dump($article->title); ?>
+        <?php if ($selectedTitle== $article->title){ ?>
+            <h1><?= $selectedTitle; ?></h1>
             <p><?= $article->description ?></p>
         <?php  } ?>
     <?php endforeach; ?>

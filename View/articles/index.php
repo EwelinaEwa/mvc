@@ -8,6 +8,7 @@
 
     <ul>
         <?php foreach ($articles as $article) : ?>
+<!--        --><?php //var_dump($article)?>
             <li><a href="<?= 'index.php?page=show&title='. $article->title?>"> <?= $article->title ?> - <?= $article->formatPublishDate('DD-MM-YYYY') ?> </a></li>
         <?php endforeach; ?>
 
